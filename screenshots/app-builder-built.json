@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Crimson Caravan",
+      "hasCanvas": false,
+      "bodyTextLen": 336,
+      "bodyTextHash": "1f9156d1321dea7ab4b210df16e1e4233a5e506ec104b595889cf31b1afc8259",
+      "bodyTextPrefix": "SOCIAL CASINO · 18+ Crimson Caravan Three old tables, a fortune ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Crimson Caravan",
+      "hasCanvas": false,
+      "bodyTextLen": 336,
+      "bodyTextHash": "1f9156d1321dea7ab4b210df16e1e4233a5e506ec104b595889cf31b1afc8259",
+      "bodyTextPrefix": "SOCIAL CASINO · 18+ Crimson Caravan Three old tables, a fortune ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

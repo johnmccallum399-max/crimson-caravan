@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Fraunces", "Times New Roman", serif;
+  --font-display: "Cinzel", "Fraunces", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-bg: #14090c;
+  --color-surface: #1c0e12;
+  --color-raised: #2a1419;
+  --color-fg: #f0e2c4;
+  --color-muted: #c4a35a;
+  --color-subtle: #8a6a48;
+  --color-border: #3a1f24;
+  --color-accent: #8f1d2a;
+  --color-accent-fg: #f0e2c4;
+  --color-gold: #c4a35a;
+  --color-gold-fg: #14090c;
+  --color-cream: #f0e2c4;
+
+  --color-background: #14090c;
+  --color-foreground: #f0e2c4;
+  --color-card: #1c0e12;
+  --color-card-foreground: #f0e2c4;
+  --color-primary: #8f1d2a;
+  --color-primary-foreground: #f0e2c4;
+  --color-secondary: #2a1419;
+  --color-secondary-foreground: #f0e2c4;
+  --color-muted-foreground: #c4a35a;
+  --color-destructive: #8f1d2a;
+  --color-destructive-foreground: #f0e2c4;
+  --color-input: #3a1f24;
+  --color-ring: #c4a35a;
+  --color-popover: #1c0e12;
+  --color-popover-foreground: #f0e2c4;
+
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100%;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-image:
+      linear-gradient(
+        180deg,
+        color-mix(in oklab, var(--color-bg) 55%, transparent),
+        var(--color-bg) 78%
+      ),
+      url("/art/camp.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-accent) 50%, transparent);
+    color: var(--color-cream);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
